@@ -14,8 +14,6 @@ services:
       - ./tmp/nginx:/var/log/nginx
   wordpress:
     image: wordpress:php7.3-fpm
-    ports:
-      - "9000:9000"
     links:
       - db
     environment:
